@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            background: #eaeaea;
+            overflow: hidden;
+        }
+        
+        .container{
+          position: absolute;
+          
+          top: 50%;
+          left: 50%;
+          padding-top: 20px;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          height: 600px;
+          background: #f5f5f5;
+          box-shadow: 0 30px 50px #dbdbdb;
+      }
+        .container .slide .item{
+            width: 200px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            border-radius: 20px;
+            box-shadow: 0 30px 50px #505050;
+            background-position: 50% 50%;
+            background-size: cover;
+            display: inline-block;
+            transition: 0.5s;
+        }
+        
+        .slide .item:nth-child(1),
+        .slide .item:nth-child(2){
+            top: 0;
+            left: 0;
+            transform: translate(0, 0);
+            border-radius: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        
+        .slide .item:nth-child(3){
+            left: 50%;
+        }
+        .slide .item:nth-child(4){
+            left: calc(50% + 220px);
+        }
+        .slide .item:nth-child(5){
+            left: calc(50% + 440px);
+        }
+        
+       
+        .slide .item:nth-child(n + 6){
+            left: calc(50% + 660px);
+            opacity: 0;
+        }
+        
+        
+        
+        .item .content{
+            position: absolute;
+            top: 50%;
+            left: 100px;
+            width: 300px;
+            text-align: left;
+            color: #1ad069;
+            transform: translate(0, -50%);
+            font-family: system-ui;
+            display: none;
+        }
+        
+        
+        .slide .item:nth-child(2) .content{
+            display: block;
+        }
+        
+        
+        .content .name{
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: bold;
+            opacity: 0;
+            animation: animate 1s ease-in-out 1 forwards;
+        }
+        
+        .content .des{
+          font-size: medium;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: animate 1s ease-in-out 0.3s 1 forwards;
+        }
+        
+        .content button{
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0;
+            animation: animate 1s ease-in-out 0.6s 1 forwards;
+        }
+        
+        
+        @keyframes animate {
+            from{
+                opacity: 0;
+                transform: translate(0, 100px);
+                filter: blur(33px);
+            }
+        
+            to{
+                opacity: 1;
+                transform: translate(0);
+                filter: blur(0);
+            }
+        }
+        
+        
+        .button{
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            bottom: 20px;
+        }
+        
+        .button button{
+            width: 40px;
+            height: 35px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            margin: 0 5px;
+            border: 1px solid #000;
+            transition: 0.3s;
+        }
+        
+        .button button:hover{
+            background: #ababab;
+            color: #fff;
+        }
+        .nav{
+          display: flex;
+          float:right;
+        }
+        div{
+          padding:10px;
+          
+        }
+        h2{
+          padding-right:100px;
+        }
+        button{
+          color:red;
+          size: 40px;
+
+        }
+    </style>
+</head>
+<body>
+  
+    
+   
+<button><a href="home.html">< BACK</a></button>
+    <div class="container"> 
+
+        <div class="slide">
+
+            
+            <div class="item" style="background-image: url(p15.jpeg);">
+                <div class="content">
+                    <div class="name">CREATIVITY AND SOCIAL SKILLS</div>
+                    <div class="des"><p>Creativity fuels the generation of new ideas, while social skills enhance the ability to share and collaborate on those ideas effectively. Together, they enable individuals to innovate and connect meaningfully with others.</p></div>
+                    <button><a href="ps://m.facebook.com/profile.php?id=61557623223038&name=xhp_nt__fblite__profile__tab_bar">See More</a></button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://scontent.fktm8-1.fna.fbcdn.net/v/t39.30808-6/441185492_122127533150254107_5397938009359270942_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE6N41-ZWBXBuYmWHPzynyxNy8rNLBRlNs3Lys0sFGU20mnXqKr5tKx-NeACmMuwulgrD2_OuFQshTzL7zbRiQF&_nc_ohc=MEup44vKkSkQ7kNvgF7O1ex&_nc_ht=scontent.fktm8-1.fna&oh=00_AYAhpyrrY6VuVpMaEPQ63ZBgW3wkp3yko5uXTZlYTQKS6w&oe=66B699F4);">
+                <div class="content">
+                    <div class="name">EMPHASIS ON PRACTICAL LEARNING</div>
+                    <div class="des"><p>Creativity and social skills are best developed through practical learning experiences, where real-world applications and interactions provide hands-on opportunities for growth. Engaging in projects, collaborating with diverse teams, and seeking feedback in real-time help refine these abilities effectively.</p></div>
+                    <button><a href="ps://m.facebook.com/profile.php?id=61557623223038&name=xhp_nt__fblite__profile__tab_bar">See More</a></button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://scontent.fktm8-1.fna.fbcdn.net/v/t39.30808-6/451649173_122142873350254107_4651205205390204947_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHfdXcoMiY4C2F4Wyx6L04KnemEG5Hgc5Sd6YQbkeBzlPfVnuUiaiOSw5w3pa7gwUOSCUEEcs1DmOR8pk0W3j0q&_nc_ohc=0eH8wB3E-gQQ7kNvgHYruDV&_nc_ht=scontent.fktm8-1.fna&oh=00_AYD_QFR7RGpsTJbqM_mHAJoZIWaPypxnWiMmW2g21mJrvw&oe=66B6B6A5);">
+                <div class="content">
+                    <div class="name">CULTURAL ADVANCEMENT</div>
+                    <div class="des"><p>It reflects the dynamic adaptation and growth of cultural practices over time.</p></div>
+                    <button><a href="ps://m.facebook.com/profile.php?id=61557623223038&name=xhp_nt__fblite__profile__tab_bar">See More</a></button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://scontent.fktm8-1.fna.fbcdn.net/v/t39.30808-6/450509500_122142046670254107_5478762932613353455_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEwdQJa5Siv2Y6n_XCjWllnFVO8P365AHQVU7w_frkAdLDu30xj8FwW5l_Gm9vv378B1Z3XPLqmzyw31j22rDSb&_nc_ohc=jg6Ln9Bkq9wQ7kNvgFKXcnq&_nc_ht=scontent.fktm8-1.fna&oh=00_AYDd4W9spOtRoM9N7niI11NWmiLAb8SAuqDTK8UjnsI1Eg&oe=66B6BDDD);">
+                <div class="content">
+                    <div class="name">CULTURAL DANCE AND DRESSES</div>
+                    <div class="des"><p>Cultural dance highlights a community's heritage through traditional movements and rhythms, often performed during significant events. Cultural dresses showcase the aesthetic and symbolic aspects of a culture, featuring unique patterns and materials that reflect its identity and traditions.</p></div>
+                    <button><a href="ps://m.facebook.com/profile.php?id=61557623223038&name=xhp_nt__fblite__profile__tab_bar">See More</a></button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://scontent.fktm8-1.fna.fbcdn.net/v/t39.30808-6/441151894_122127662198254107_3400747495378071009_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEgYUloOBgLiDTGPZTpldhcPfJ5L82oXdg98nkvzahd2DHwcF8spgOogN2akg3j-Ne7tyDxBnvPW2P4YTJUYEL2&_nc_ohc=GkE9nrENGrEQ7kNvgF31MVE&_nc_ht=scontent.fktm8-1.fna&oh=00_AYBQDNWbacP_rJkRpvE5wxXGH3yiuP35Vpszayta5i9p3Q&oe=66B6B1D4);">
+                <div class="content">
+                    <div class="name">REGULAR DOCTOR CHECKUP</div>
+                    <div class="des"><p> Regular doctor check-up involves a routine examination to monitor overall health, prevent potential issues, and address any emerging concerns. It typically includes assessing vital signs, reviewing medical history, and conducting necessary tests or screenings.</p></div>
+                    <button><a href="ps://m.facebook.com/profile.php?id=61557623223038&name=xhp_nt__fblite__profile__tab_bar">See More</a></button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://scontent.fktm8-1.fna.fbcdn.net/v/t39.30808-6/444492787_122128969640254107_5298778980807695709_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHEAS9U2UhbwuLxzLDddNO6ZbIYFWuJQCllshgVa4lAKXn_cexriwwus-rl9W1j3zMm4nSAK94Ird3L2bXRMyIL&_nc_ohc=Y90Qk-T-x6kQ7kNvgGoZPJa&_nc_ht=scontent.fktm8-1.fna&oh=00_AYAZxMSJoXeDrhSbpSr1WrNBqco4qhKmDEHKFch86MBSJw&oe=66B6A44D);">
+                <div class="content">
+                    <div class="name">EXTRA-CURRIULAR ACTIVITIES</div>
+                    <div class="des"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</p></div>
+                    <button><a href="ps://m.facebook.com/profile.php?id=61557623223038&name=xhp_nt__fblite__profile__tab_bar">See More</a></button>
+                </div>
+            </div>
+            
+
+        </div>
+      
+
+
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+    </div>
+    <script>
+        let next = document.querySelector('.next')
+let prev = document.querySelector('.prev')
+
+next.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.slide').appendChild(items[0])
+})
+
+prev.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.slide').prepend(items[items.length - 1]) 
+})
+    </script>
+    
+</body>
+</html>
